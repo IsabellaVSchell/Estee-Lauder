@@ -1,0 +1,879 @@
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Our remix on glitch button */
+.btn--remix {
+  font-family: HK Grotesk;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #D0FFF1;
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+  text-align: center;
+  background-image: linear-gradient(#F5C6A7, #7581A9);
+  /*background-color: #0941CA;*/
+  color: darkblue; 
+  
+}
+
+h1{
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+button{
+  display: inline;
+  margin: 2%;  
+}
+
+img{
+  max-width: 100%;
+}
+
+.funFont{
+  font-family: "Rock Salt", cursive;
+  font-size: 100%;
+}
+
+/* div for slide nav bar */
+.leftDiv{
+  text-align: left;
+  display: inline;
+  float: left;
+}
+
+/*Header div */
+
+.header{
+  background-image: url("https://cdn.glitch.com/9ce980ba-9567-4697-b910-3055b4d194c5%2FEL_7.jpg?v=1624935954440");
+  background-size: cover;
+  background-color: white;
+  border-bottom: 5px solid black;
+  color: gold;
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+/*shade div */
+
+.shadeDiv{
+  height: 30px;
+  max-width: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #2800FF;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* rotates something */
+.rotated {
+  transform: rotate(360deg);
+}
+
+
+
+
+
+
+/*Side navigation bar code */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.alabaster{
+  background-color: #FBDCBD;
+  cursor: pointer;
+}
+
+.shell{
+  background-color: #D8BBA3;
+  cursor: pointer;
+}
+
+.coolBone{
+  background-color: #FAD5BA;
+  cursor: pointer;
+}
+
+.ivoryNude{
+  background-color: #F8C7A2;
+  cursor: pointer;
+}
+
+.bone{
+  background-color: #F9CBA6;
+  cursor: pointer;
+}
+
+.ecru{
+  background-color: #F8C6A7;
+  cursor: pointer;
+}
+
+.sand{
+  background-color: #E5B593;
+  cursor: pointer;
+}
+
+.coolVanilla{
+  background-color: #DEA365;
+  cursor: pointer;
+}
+
+.warmVanilla{
+  background-color: #D4A066;
+  cursor: pointer;
+}
+
+.pureBeige{
+  background-color: #D8A46D;
+  cursor: pointer;
+}
+
+.desertBeige{
+  background-color: #F2BB96;
+  cursor: pointer;
+}
+
+.dawn{
+  background-color: #F2BF91;
+  cursor: pointer;
+}
+
+.buff{
+  background-color: #D0A26E;
+  cursor: pointer;
+}
+
+.rattan{
+  background-color: #EDBE98;
+  cursor: pointer;
+}
+
+.fresco{
+  background-color: #DDB491;
+  cursor: pointer;
+}
+
+.ivoryRose{
+  background-color: #C29570;
+  cursor: pointer;
+}
+
+.dusk{
+  background-color: #E7B79C;
+  cursor: pointer;
+}
+
+.ivoryBeige{
+  background-color: #E5AD8A;
+  cursor: pointer;
+}
+
+.tawny{
+  background-color: #CF905D;
+  cursor: pointer;
+}
+
+.fawn{
+  background-color: #C48F56;
+  cursor: pointer;
+}
+
+.pebble{
+  background-color: #EBAD81;
+  cursor: pointer;
+}
+
+.wheat{
+  background-color: #D59A71;
+  cursor: pointer;
+}
+
+.cashew{
+  background-color: #D69060;
+  cursor: pointer;
+}
+
+.sandbar{
+  background-color: #BC8344;
+  cursor: pointer;
+}
+
+.outdoorBeige{
+  background-color: #CA977A;
+  cursor: pointer;
+}
+
+.shellBeige{
+  background-color: #D7986D;
+  cursor: pointer;
+}
+
+.honeyBronze{
+  background-color: #C27440;
+  cursor: pointer;
+}
+
+.auburn{
+  background-color: #AB6F37;
+  cursor: pointer;
+}
+
+.spicedSand{
+  background-color: #AD7247;
+  cursor: pointer;
+}
+
+.toastyToffee{
+  background-color: #C0976B;
+  cursor: pointer;
+}
+
+.softan{
+  background-color: #BE8058;
+  cursor: pointer;
+}
+
+.mapleSugar{
+  background-color: #C68F4F;
+  cursor: pointer;
+}
+
+.henna{
+  background-color: #AB7E49;
+  cursor: pointer;
+}
+
+.hazel{
+  background-color: #C79045;
+  cursor: pointer;
+}
+
+.richChestnut{
+  background-color: #99562C;
+  cursor: pointer;
+}
+
+.richGinger{
+  background-color: #DA926B;
+  cursor: pointer;
+}
+
+.bronze{
+  background-color: #B56E38;
+  cursor: pointer;
+}
+
+.maple{
+  background-color: #A86834;
+  cursor: pointer;
+}
+
+.cinnamon{
+  background-color: #BB8046;
+  cursor: pointer;
+}
+
+.sepia{
+  background-color: #C88644;
+  cursor: pointer;
+}
+
+.amberHoney{
+  background-color: #C88644;
+  cursor: pointer;
+}
+
+.richCaramel{
+  background-color: #A85F2A;
+  cursor: pointer;
+}
+
+.richCocoa{
+  background-color: #8F4D2B;
+  cursor: pointer;
+}
+
+.mocha{
+  background-color: #8F5C35;
+  cursor: pointer;
+}
+
+.sandalwood{
+  background-color: #A56232;
+  cursor: pointer;
+}
+
+.pecan{
+  background-color: #864F26;
+  cursor: pointer;
+}
+
+.truffle{
+  background-color: #895C26;
+  cursor: pointer;
+}
+
+.nutmeg{
+  background-color: #925B2D;
+  cursor: pointer;
+}
+
+.richMahogany{
+  background-color: #77421E;
+  cursor: pointer;
+}
+
+.deepAmber{
+  background-color: #724727;
+  cursor: pointer;
+}
+
+.deepSpice{
+  background-color: #7E512D;
+  cursor: pointer;
+}
+
+.sienna{
+  background-color: #804C15;
+  cursor: pointer;
+}
+
+.richJava{
+  background-color: #693D25;
+  cursor: pointer;
+}
+
+.espresso{
+  background-color: #5E3617;
+  cursor: pointer;
+}
+
+.porcelain{
+  background-color: #E6BB98;
+  cursor: pointer;
+}
+
+.warmPorcelain{
+  background-color: #E5C194;
+  cursor: pointer;
+}
+
+
+.alabasterBtn{
+  background-color: #FBDCBD;
+  cursor: pointer;
+}
+
+.shellBtn{
+  background-color: #D8BBA3;
+  cursor: pointer;
+}
+
+.coolBoneBtn{
+  background-color: #FAD5BA;
+  cursor: pointer;
+}
+
+.ivoryNudeBtn{
+  background-color: #F8C7A2;
+  cursor: pointer;
+}
+
+.boneBtn{
+  background-color: #F9CBA6;
+  cursor: pointer;
+}
+
+.ecruBtn{
+  background-color: #F8C6A7;
+  cursor: pointer;
+}
+
+.sandBtn{
+  background-color: #E5B593;
+  cursor: pointer;
+}
+
+.coolVanillaBtn{
+  background-color: #DEA365;
+  cursor: pointer;
+}
+
+.warmVanillaBtn{
+  background-color: #D4A066;
+  cursor: pointer;
+}
+
+.pureBeigeBtn{
+  background-color: #D8A46D;
+  cursor: pointer;
+}
+
+.desertBeigeBtn{
+  background-color: #F2BB96;
+  cursor: pointer;
+}
+
+.dawnBtn{
+  background-color: #F2BF91;
+  cursor: pointer;
+}
+
+.buffBtn{
+  background-color: #D0A26E;
+  cursor: pointer;
+}
+
+.rattanBtn{
+  background-color: #EDBE98;
+  cursor: pointer;
+}
+
+.frescoBtn{
+  background-color: #DDB491;
+  cursor: pointer;
+}
+
+.ivoryRoseBtn{
+  background-color: #C29570;
+  cursor: pointer;
+}
+
+.duskBtn{
+  background-color: #E7B79C;
+  cursor: pointer;
+}
+
+.ivoryBeigeBtn{
+  background-color: #E5AD8A;
+  cursor: pointer;
+}
+
+.tawnyBtn{
+  background-color: #CF905D;
+  cursor: pointer;
+}
+
+.fawnBtn{
+  background-color: #C48F56;
+  cursor: pointer;
+}
+
+.pebbleBtn{
+  background-color: #EBAD81;
+  cursor: pointer;
+}
+
+.wheatBtn{
+  background-color: #D59A71;
+  cursor: pointer;
+}
+
+.cashewBtn{
+  background-color: #D69060;
+  cursor: pointer;
+}
+
+.sandbarBtn{
+  background-color: #BC8344;
+  cursor: pointer;
+}
+
+.outdoorBeigeBtn{
+  background-color: #CA977A;
+  cursor: pointer;
+}
+
+.shellBeigeBtn{
+  background-color: #D7986D;
+  cursor: pointer;
+}
+
+.honeyBronzeBtn{
+  background-color: #C27440;
+  cursor: pointer;
+}
+
+.auburnBtn{
+  background-color: #AB6F37;
+  cursor: pointer;
+}
+
+.spicedSandBtn{
+  background-color: #AD7247;
+  cursor: pointer;
+}
+
+.toastyToffeeBtn{
+  background-color: #C0976B;
+  cursor: pointer;
+}
+
+.softan{
+  background-color: #BE8058;
+  cursor: pointer;
+}
+
+.mapleSugarBtn{
+  background-color: #C68F4F;
+  cursor: pointer;
+}
+
+.hennaBtn{
+  background-color: #AB7E49;
+  cursor: pointer;
+}
+
+.hazelBtn{
+  background-color: #C79045;
+  cursor: pointer;
+}
+
+.richChestnutBtn{
+  background-color: #99562C;
+  cursor: pointer;
+}
+
+.richGingerBtn{
+  background-color: #DA926B;
+  cursor: pointer;
+}
+
+.bronzeBtn{
+  background-color: #B56E38;
+  cursor: pointer;
+}
+
+.mapleBtn{
+  background-color: #A86834;
+  cursor: pointer;
+}
+
+.cinnamonBtn{
+  background-color: #BB8046;
+  cursor: pointer;
+}
+
+.sepiaBtn{
+  background-color: #C88644;
+  cursor: pointer;
+}
+
+.amberHoneyBtn{
+  background-color: #C88644;
+  cursor: pointer;
+}
+
+.richCaramelBtn{
+  background-color: #A85F2A;
+  cursor: pointer;
+}
+
+.richCocoaBtn{
+  background-color: #8F4D2B;
+  cursor: pointer;
+}
+
+.mochaBtn{
+  background-color: #8F5C35;
+  cursor: pointer;
+}
+
+.sandalwoodBtn{
+  background-color: #A56232;
+  cursor: pointer;
+}
+
+.pecanBtn{
+  background-color: #864F26;
+  cursor: pointer;
+}
+
+.truffleBtn{
+  background-color: #895C26;
+  cursor: pointer;
+}
+
+.nutmegBtn{
+  background-color: #925B2D;
+  cursor: pointer;
+}
+
+.richMahoganyBtn{
+  background-color: #77421E;
+  cursor: pointer;
+}
+
+.deepAmberBtn{
+  background-color: #724727;
+  cursor: pointer;
+}
+
+.deepSpiceBtn{
+  background-color: #7E512D;
+  cursor: pointer;
+}
+
+.siennaBtn{
+  background-color: #804C15;
+  cursor: pointer;
+}
+
+.richJavaBtn{
+  background-color: #693D25;
+  cursor: pointer;
+}
+
+.espressoBtn{
+  background-color: #5E3617;
+  cursor: pointer;
+}
+
+.porcelainBtn{
+  background-color: #E6BB98;
+  cursor: pointer;
+}
+
+.warmPorcelainBtn{
+  background-color: #E5C194;
+  cursor: pointer;
+}
+
+
+.colorsHeader{
+  text-align: center;
+}
+
+
+.shopDiv{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.cartDiv{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonsDiv{
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addToCart{
+  background-color: tan;
+  display: inline-block;
+  margin-left: 0;
+  height: 50%;
+  width: 100%%;
+}
+
+.dropbtn {
+  background-color: tan;
+  color: black;
+  font-size: 16px;
+  border: solid;
+  border-width: 1px;
+  border-color:black;
+  cursor: pointer;
+  width: 130%;
+  height: 100%;
+  text-align: center;
+  margin-right:0;
+  margin-bottom: 0;
+  float: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 30%;
+  max-width: 120%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gold;
+  min-width: 120%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 150%;
+  text-align: center;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.dropdown-content a:hover {
+  background-color:white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e68a00;
+  transition: 1s;
+}
+
+.shopHeader{
+  display:inline;
+}
+
+.checkOut{
+  background-color: tan;
+}
