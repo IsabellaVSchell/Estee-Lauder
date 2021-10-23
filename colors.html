@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>Shades</title>
+   <!-- Fonts --> 
+    <link rel="preconnect"  href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rock+Salt&display=swap" rel="stylesheet">
+    <!-- End fonts -->
+  </head>
+  <body>
+  <!-- Header div -->
+  <div class = "header">  
+    <div class = "leftDiv">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="colors.html">Shades</a>
+        <a href="shop.html">Shop</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>  
+    <h1>
+      ESTĒE LAUDER
+    </h1>
+    <h2>
+      DOUBLE WEAR STAY IN PLACE
+    </h2>
+  </div>
+ <!-- End header div -->
+
+  <br>
+
+  <!-- Image of face -->
+
+  <img width="320" height="300" class = "faceImg" id = "faceImg" src = "https://cdn.glitch.com/9ce980ba-9567-4697-b910-3055b4d194c5%2FEL_18.jpg?v=1625107864505">
+
+  <br>
+
+  <!-- All colors -->
+
+  <button class = "warmPorcelain">
+  </button>
+  
+  <button class = "porcelain">
+  </button>
+  
+  <button class = "espresso">
+  </button>
+  
+  <button class = "richJava">
+  </button>
+  
+  <button class = "sienna">
+  </button>
+  
+  <button class = "deepSpice">
+  </button>
+  
+  <button class = "deepAmber">
+  </button>
+  
+  <button class = "richMahogany">
+  </button>
+  
+  <button class = "nutmeg">
+  </button>
+  
+  <button class = "truffle">
+  </button>
+  
+  <button class = "pecan">
+  </button>
+  
+  <button class = "sandalwood">
+  </button>
+  
+  <button class = "mocha">
+  </button>
+  
+  <button class = "richCocoa">
+  </button>
+  
+  <button class = "richCaramel">
+  </button>
+  
+  <button class = "amberHoney">
+  </button>
+  
+  <button class = "sepia">
+  </button>
+  
+  <button class = "cinnamon">
+  </button>
+  
+  <button class = "maple">
+  </button>
+  
+  <button class = "bronze">
+  </button>
+  
+  <button class = "richGinger">
+  </button>
+  
+  <button class = "richChestnut">
+  </button>
+  
+   <button class = "hazel">
+  </button>
+  
+   <button class = "henna">
+  </button>
+  
+  <button class = "mapleSugar">
+  </button>
+  
+  <button class = "softan">
+  </button>
+  
+  <button class = "toastyToffee">
+  </button>
+  
+  <button class = "spicedSand">
+  </button>
+  
+  <button class = "auburn">
+  </button>
+  
+  <button class = "honeyBronze">
+  </button>
+  
+  <button class = "shellBeige">
+  </button>
+  
+  <button class = "outdoorBeige">
+  </button>
+  
+  <button class = "sandbar">
+  </button>
+  
+  <button class = "cashew">
+  </button>
+  
+  <button class = "wheat">
+  </button>
+  
+  <button class = "pebble">
+  </button>
+  
+  <button class = "fawn">
+  </button>
+  
+  <button class = "tawny">
+  </button>
+  
+  <button class = "ivoryBeige">
+  </button>
+  
+  <button class = "dusk">
+  </button>
+  
+  <button class = "ivoryRose">
+  </button>
+  
+  <button class = "fresco">
+  </button>
+  
+  <button class = "rattan">
+  </button>
+  
+  <button class = "buff">
+  </button>
+  
+  <button class = "dawn">
+  </button>
+  
+  <button class = "desertBeige">
+  </button>
+  
+  <button class = "pureBeige">
+  </button>
+  
+  <button class = "warmVanilla">
+  </button>
+  
+  <button class = "coolVanilla">
+  </button>
+  
+  <button class = "sand">
+  </button>
+  
+  <button class = "ecru">
+  </button>
+  
+  <button class = "bone">
+  </button>
+  
+  <button class = "ivoryNude">
+  </button>
+  
+  <button class = "coolBone">
+  </button>
+  
+  <button class = "shell">
+  </button>
+  
+  <button class = "alabaster">
+  </button>
+  <!-- End all colors -->
+  
+  <br>
+  
+  <!-- Show selected color -->
+  <h1 class = "colorsHeader"> 
+  </h1>
+
+  <br>
+
+  <!-- Image of arm -->
+
+   <img width="320" height="300" class = "armImg" id = "armImg" src = "https://cdn.glitch.com/9ce980ba-9567-4697-b910-3055b4d194c5%2FEL_29.jpg?v=1625108164051">
+
+  
+  <!-- Nav bar Javascript -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!--End nav bar Javascript -->
+  </body>
+</html>
